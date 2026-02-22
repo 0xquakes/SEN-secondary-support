@@ -215,8 +215,9 @@ Make everything immediately actionable - a teacher should be able to use this wi
     return NextResponse.json(parsed);
   } catch (error) {
     console.error('Generate API error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to generate resources' },
+      { error: 'Failed to generate resources', details: errorMessage },
       { status: 500 }
     );
   }

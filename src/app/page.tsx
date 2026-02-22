@@ -10,8 +10,13 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-emerald-50 to-white py-20 md:py-28">
+      <section className="bg-gradient-to-b from-emerald-50 to-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <img
+            src="/mascot.png"
+            alt="Includable mascot"
+            className="w-24 h-24 mx-auto mb-6"
+          />
           <p className="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wide">For KS3/KS4 Teachers and TAs</p>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
             Turn SEND paperwork into<br />

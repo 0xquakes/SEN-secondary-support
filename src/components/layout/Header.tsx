@@ -25,11 +25,19 @@ export function Header() {
           <div className="flex items-center gap-8">
             <Link
               href="/"
-              className="flex flex-col"
+              className="flex items-center gap-2"
               aria-label="Includable - Home"
             >
-              <span className="text-xl font-bold text-emerald-600">Includable</span>
-              <span className="text-xs text-slate-500 hidden sm:block">For KS3/KS4 Teachers</span>
+              <img
+                src="/mascot.png"
+                alt=""
+                className="w-10 h-10"
+                aria-hidden="true"
+              />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-emerald-600">Includable</span>
+                <span className="text-xs text-slate-500 hidden sm:block">For KS3/KS4 Teachers</span>
+              </div>
             </Link>
 
             <nav

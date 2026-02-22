@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <circle cx="200" cy="150" r="120" fill="#ECFDF5" opacity="0.3"/>
+
+  <!-- Strategy cards fanned out -->
+  <!-- Back card -->
+  <rect x="100" y="80" width="120" height="160" rx="8" fill="#3B82F6" transform="rotate(-15 160 160)"/>
+  <rect x="115" y="100" width="60" height="8" rx="2" fill="white" opacity="0.8" transform="rotate(-15 145 104)"/>
+  <rect x="115" y="115" width="80" height="5" rx="1" fill="white" opacity="0.4" transform="rotate(-15 155 117)"/>
+
+  <!-- Middle card -->
+  <rect x="140" y="70" width="120" height="160" rx="8" fill="#10B981"/>
+  <rect x="155" y="90" width="65" height="8" rx="2" fill="white" opacity="0.8"/>
+  <rect x="155" y="105" width="85" height="5" rx="1" fill="white" opacity="0.4"/>
+  <rect x="155" y="115" width="70" height="5" rx="1" fill="white" opacity="0.4"/>
+  <rect x="155" y="135" width="90" height="50" rx="4" fill="white" opacity="0.2"/>
+  <circle cx="200" cy="160" r="15" fill="white" opacity="0.3"/>
+
+  <!-- Front card -->
+  <rect x="180" y="80" width="120" height="160" rx="8" fill="#F59E0B" transform="rotate(15 240 160)"/>
+  <rect x="195" y="100" width="55" height="8" rx="2" fill="white" opacity="0.8" transform="rotate(15 222 104)"/>
+  <rect x="195" y="115" width="75" height="5" rx="1" fill="white" opacity="0.4" transform="rotate(15 232 117)"/>
+
+  <!-- Magnifying glass -->
+  <circle cx="320" cy="100" r="30" stroke="#64748B" stroke-width="6" fill="white" opacity="0.9"/>
+  <line x1="340" y1="120" x2="365" y2="145" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="320" cy="100" r="18" stroke="#E2E8F0" stroke-width="2" fill="none"/>
+
+  <!-- Search sparkle -->
+  <path d="M310 90 L312 95 L317 95 L313 98 L314 103 L310 100 L306 103 L307 98 L303 95 L308 95 Z" fill="#FCD34D"/>
+
+  <!-- Floating elements -->
+  <circle cx="80" cy="200" r="10" fill="#C4B5FD" opacity="0.6"/>
+  <circle cx="350" cy="200" r="8" fill="#A5F3FC" opacity="0.6"/>
+
+  <!-- Small decorative cards -->
+  <rect x="60" y="120" width="30" height="40" rx="4" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="67" y="128" width="16" height="3" rx="1" fill="#E2E8F0"/>
+  <rect x="67" y="135" width="12" height="3" rx="1" fill="#E2E8F0"/>
+
+  <rect x="330" y="160" width="30" height="40" rx="4" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="337" y="168" width="16" height="3" rx="1" fill="#E2E8F0"/>
+  <rect x="337" y="175" width="12" height="3" rx="1" fill="#E2E8F0"/>
+
+  <!-- Stars -->
+  <path d="M90 80 L92 86 L98 86 L93 90 L95 96 L90 92 L85 96 L87 90 L82 86 L88 86 Z" fill="#FCD34D"/>
+</svg>

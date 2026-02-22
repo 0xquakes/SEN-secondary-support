@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <circle cx="200" cy="150" r="110" fill="#FEF3C7" opacity="0.3"/>
+
+  <!-- Stack of books -->
+  <rect x="120" y="180" width="160" height="25" rx="3" fill="#3B82F6"/>
+  <rect x="122" y="182" width="4" height="21" fill="#2563EB"/>
+  <rect x="130" y="155" width="140" height="25" rx="3" fill="#10B981"/>
+  <rect x="132" y="157" width="4" height="21" fill="#059669"/>
+  <rect x="125" y="130" width="150" height="25" rx="3" fill="#F59E0B"/>
+  <rect x="127" y="132" width="4" height="21" fill="#D97706"/>
+  <rect x="135" y="105" width="130" height="25" rx="3" fill="#EC4899"/>
+  <rect x="137" y="107" width="4" height="21" fill="#DB2777"/>
+
+  <!-- Open book on top -->
+  <path d="M145 60 Q200 80 200 100 L200 100 Q200 80 255 60 L255 95 Q200 115 200 95 L200 95 Q200 115 145 95 Z" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+  <line x1="200" y1="70" x2="200" y2="95" stroke="#CBD5E1" stroke-width="1"/>
+  <line x1="160" y1="72" x2="190" y2="80" stroke="#E2E8F0" stroke-width="2"/>
+  <line x1="160" y1="80" x2="185" y2="86" stroke="#E2E8F0" stroke-width="2"/>
+  <line x1="210" y1="80" x2="240" y2="72" stroke="#E2E8F0" stroke-width="2"/>
+  <line x1="215" y1="86" x2="240" y2="80" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- Floating document -->
+  <rect x="280" y="100" width="60" height="80" rx="4" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="290" y="115" width="40" height="5" rx="1" fill="#E2E8F0"/>
+  <rect x="290" y="125" width="35" height="5" rx="1" fill="#E2E8F0"/>
+  <rect x="290" y="135" width="40" height="5" rx="1" fill="#E2E8F0"/>
+  <rect x="290" y="145" width="25" height="5" rx="1" fill="#E2E8F0"/>
+  <rect x="290" y="160" width="40" height="10" rx="2" fill="#10B981"/>
+
+  <!-- Pencil -->
+  <rect x="60" y="120" width="60" height="12" rx="2" fill="#FCD34D" transform="rotate(-30 90 126)"/>
+  <polygon points="45,155 55,145 60,155" fill="#F8CDBA"/>
+  <polygon points="47,157 55,147 50,155" fill="#1E293B"/>
+
+  <!-- Lightbulb -->
+  <circle cx="320" cy="60" r="20" fill="#FEF3C7" stroke="#FCD34D" stroke-width="2"/>
+  <path d="M312 75 L312 85 L328 85 L328 75" stroke="#FCD34D" stroke-width="2" fill="none"/>
+  <line x1="315" y1="88" x2="325" y2="88" stroke="#FCD34D" stroke-width="2"/>
+  <path d="M320 50 L320 42" stroke="#FCD34D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M330 55 L336 49" stroke="#FCD34D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M310 55 L304 49" stroke="#FCD34D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Decorative dots -->
+  <circle cx="80" cy="200" r="6" fill="#A5F3FC"/>
+  <circle cx="340" cy="180" r="8" fill="#C4B5FD"/>
+  <circle cx="100" cy="80" r="5" fill="#FCA5A5"/>
+
+  <!-- Stars -->
+  <path d="M70 140 L72 146 L78 146 L73 150 L75 156 L70 152 L65 156 L67 150 L62 146 L68 146 Z" fill="#FCD34D"/>
+</svg>

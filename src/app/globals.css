@@ -1,26 +1,545 @@
 @import "tailwindcss";
 
+/* ==========================================================================
+   Accessibility-First Global Styles
+   SEND Teaching Strategies - Practical Classroom Support
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-inter: 'Inter', system-ui, sans-serif;
+
+  /* Dyslexia-friendly spacing variables */
+  --line-height-relaxed: 1.7;
+  --letter-spacing-relaxed: 0.02em;
+  --word-spacing-relaxed: 0.05em;
+
+  /* Focus ring colours */
+  --focus-ring-color: rgb(16 185 129); /* emerald-500 */
+  --focus-ring-offset: 3px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ==========================================================================
+   Base Typography - Dyslexia Friendly
+   ========================================================================== */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  /* Prevent text size adjustment on orientation change */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Dyslexia-friendly defaults */
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-relaxed);
+  word-spacing: var(--word-spacing-relaxed);
+
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Improved paragraph spacing */
+p {
+  margin-bottom: 1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Ensure sufficient contrast for all text */
+.text-slate-600 {
+  color: rgb(71 85 105) !important; /* Boosted for better contrast on light bg */
+}
+
+/* ==========================================================================
+   Focus States - Keyboard Navigation
+   ========================================================================== */
+
+/* Remove default outline and add custom focus ring */
+*:focus {
+  outline: none;
+}
+
+/* Visible focus ring for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: 4px;
+}
+
+/* Enhanced focus for buttons and links */
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.2);
+}
+
+/* Focus within for form groups */
+.focus-within-ring:focus-within {
+  outline: 2px solid var(--focus-ring-color);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  background: rgb(16 185 129);
+  color: white;
+  font-weight: 600;
+  z-index: 9999;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ==========================================================================
+   Interactive Elements
+   ========================================================================== */
+
+/* Ensure all interactive elements have visible hover/active states */
+button,
+a,
+[role="button"],
+input,
+select,
+textarea {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Larger touch targets for mobile (minimum 44x44px) */
+button,
+a,
+[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Exception for inline links */
+p a,
+li a,
+.inline-link {
+  min-height: auto;
+  min-width: auto;
+}
+
+/* Ensure buttons have pointer cursor */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+/* Disabled state styling */
+button:disabled,
+[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   Form Elements - Accessibility
+   ========================================================================== */
+
+select,
+input,
+textarea {
+  font-size: 1rem; /* Prevent iOS zoom on focus */
+  line-height: var(--line-height-relaxed);
+}
+
+/* High contrast for form labels */
+label {
+  font-weight: 500;
+}
+
+/* Error states */
+.input-error {
+  border-color: rgb(239 68 68) !important;
+}
+
+.input-error:focus-visible {
+  outline-color: rgb(239 68 68);
+}
+
+/* ==========================================================================
+   Video and Media - Accessibility
+   ========================================================================== */
+
+/* Ensure video controls are always accessible */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+video::-webkit-media-controls-enclosure {
+  border-radius: 0;
+}
+
+/* Captions styling */
+video::cue {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.5;
+  padding: 0.25em 0.5em;
+}
+
+/* Transcript container styling */
+.transcript {
+  background: rgb(248 250 252); /* slate-50 */
+  border: 1px solid rgb(226 232 240); /* slate-200 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  line-height: var(--line-height-relaxed);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transcript:focus-visible {
+  outline: 2px solid var(--focus-ring-color);
+}
+
+/* ==========================================================================
+   Custom Scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(241 245 249); /* slate-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225); /* slate-300 */
+  border-radius: 5px;
+  border: 2px solid rgb(241 245 249);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(148 163 184); /* slate-400 */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) rgb(241 245 249);
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Custom slate-750 color */
+.bg-slate-750 {
+  background-color: rgb(40 50 65);
+}
+
+.hover\:bg-slate-750:hover {
+  background-color: rgb(40 50 65);
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visually hidden but focusable */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ==========================================================================
+   Animations - Reduced Motion Support
+   ========================================================================== */
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-pulse-subtle {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   High Contrast Mode Support
+   ========================================================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --focus-ring-color: yellow;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    border: 2px solid currentColor !important;
+  }
+}
+
+/* ==========================================================================
+   Prose/Content Styles
+   ========================================================================== */
+
+.prose-light {
+  color: rgb(71 85 105); /* slate-600 */
+  line-height: var(--line-height-relaxed);
+}
+
+.prose-light strong {
+  color: rgb(15 23 42); /* slate-900 */
+  font-weight: 600;
+}
+
+.prose-light a {
+  color: rgb(5 150 105); /* emerald-600 */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-light a:hover {
+  color: rgb(4 120 87); /* emerald-700 */
+}
+
+.prose-light code {
+  color: rgb(5 150 105); /* emerald-600 */
+  background-color: rgb(241 245 249); /* slate-100 */
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  /* Reset colours for print */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+
+  @page :first {
+    margin-top: 1cm;
+  }
+
+  /* Hide non-essential elements */
+  .print\:hidden,
+  nav,
+  button,
+  video,
+  audio,
+  .skip-link,
+  header,
+  footer {
+    display: none !important;
+  }
+
+  .print\:block {
+    display: block !important;
+  }
+
+  /* Ensure text is black */
+  .print\:text-black,
+  h1, h2, h3, h4, h5, h6,
+  p, li, td, th, label {
+    color: black !important;
+  }
+
+  /* Grey for secondary text */
+  .text-slate-400,
+  .text-slate-500,
+  .text-emerald-400 {
+    color: #666 !important;
+  }
+
+  /* Ensure links are visible */
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+
+  /* Show URLs after links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Don't show URLs for internal links */
+  a[href^="/"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Page breaks */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  section,
+  article,
+  .avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Table styling for print */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ccc !important;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background: #f5f5f5 !important;
+    font-weight: 600;
+  }
+
+  /* Ensure borders print */
+  .border,
+  .border-t,
+  .border-b,
+  .border-l,
+  .border-r {
+    border-color: #ccc !important;
+  }
+
+  /* Badges/tags for print */
+  .bg-emerald-600,
+  .bg-emerald-900,
+  .bg-slate-700,
+  .bg-blue-900,
+  .bg-green-900,
+  .bg-yellow-900,
+  .bg-red-900 {
+    background: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+
+  /* Print header */
+  .print-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 1cm;
+    padding-bottom: 0.5cm;
+    border-bottom: 2px solid black;
+  }
+
+  /* Print footer */
+  .print-footer {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    color: #666 !important;
+    padding-top: 0.5cm;
+    border-top: 1px solid #ccc;
+  }
+}
+
+/* ==========================================================================
+   Disclaimer Banner Styles
+   ========================================================================== */
+
+.disclaimer-banner {
+  background: rgb(254 252 232); /* amber-50 */
+  border-left: 4px solid rgb(245 158 11); /* amber-500 */
+}
+
+.disclaimer-banner-print {
+  border: 2px solid #666;
+  padding: 1rem;
+  margin: 1rem 0;
 }

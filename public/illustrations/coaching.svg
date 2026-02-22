@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background elements -->
+  <circle cx="200" cy="150" r="120" fill="#ECFDF5" opacity="0.5"/>
+
+  <!-- Clipboard/checklist -->
+  <rect x="240" y="80" width="100" height="140" rx="8" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="270" y="70" width="40" height="20" rx="4" fill="#10B981"/>
+  <rect x="255" y="100" width="70" height="8" rx="2" fill="#E2E8F0"/>
+  <rect x="255" y="118" width="55" height="8" rx="2" fill="#E2E8F0"/>
+  <rect x="255" y="136" width="65" height="8" rx="2" fill="#E2E8F0"/>
+  <rect x="255" y="154" width="50" height="8" rx="2" fill="#E2E8F0"/>
+  <rect x="255" y="172" width="60" height="8" rx="2" fill="#E2E8F0"/>
+
+  <!-- Checkmarks -->
+  <circle cx="262" cy="104" r="6" fill="#10B981"/>
+  <path d="M259 104 L261 106 L265 102" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="262" cy="122" r="6" fill="#10B981"/>
+  <path d="M259 122 L261 124 L265 120" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="262" cy="140" r="6" fill="#10B981"/>
+  <path d="M259 140 L261 142 L265 138" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="262" cy="158" r="6" fill="#CBD5E1"/>
+  <circle cx="262" cy="176" r="6" fill="#CBD5E1"/>
+
+  <!-- Coach figure -->
+  <circle cx="120" cy="100" r="35" fill="#FCD34D"/>
+  <rect x="95" y="140" width="50" height="80" rx="10" fill="#8B5CF6"/>
+  <rect x="85" y="150" width="18" height="50" rx="5" fill="#8B5CF6"/>
+  <rect x="147" y="150" width="18" height="50" rx="5" fill="#8B5CF6"/>
+  <circle cx="108" cy="92" r="5" fill="#1E293B"/>
+  <circle cx="132" cy="92" r="5" fill="#1E293B"/>
+  <path d="M112 108 Q120 116 128 108" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Speech bubble -->
+  <path d="M170 80 Q170 60 200 60 L260 60 Q280 60 280 80 L280 100 Q280 115 260 115 L200 115 L180 130 L185 115 Q170 115 170 100 Z" fill="white" stroke="#10B981" stroke-width="2"/>
+  <rect x="185" y="75" width="40" height="6" rx="2" fill="#10B981"/>
+  <rect x="185" y="88" width="55" height="6" rx="2" fill="#D1FAE5"/>
+  <rect x="185" y="100" width="35" height="6" rx="2" fill="#D1FAE5"/>
+
+  <!-- Decorative elements -->
+  <circle cx="60" cy="180" r="8" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="340" cy="200" r="10" fill="#A5F3FC" opacity="0.6"/>
+  <rect x="50" y="100" width="15" height="15" rx="3" fill="#C4B5FD" opacity="0.5" transform="rotate(15 57 107)"/>
+
+  <!-- Stars -->
+  <path d="M320 100 L322 106 L328 106 L323 110 L325 116 L320 112 L315 116 L317 110 L312 106 L318 106 Z" fill="#FCD34D"/>
+  <path d="M80" cy="60" d="M80 60 L81 64 L85 64 L82 67 L83 71 L80 68 L77 71 L78 67 L75 64 L79 64 Z" fill="#FCD34D"/>
+</svg>

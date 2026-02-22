@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <!-- Background glow -->
+  <circle cx="150" cy="100" r="80" fill="#ECFDF5" opacity="0.5"/>
+
+  <!-- Robot/AI head -->
+  <rect x="100" y="50" width="100" height="90" rx="20" fill="white" stroke="#10B981" stroke-width="3"/>
+
+  <!-- Screen face -->
+  <rect x="115" y="65" width="70" height="50" rx="8" fill="#ECFDF5"/>
+
+  <!-- Eyes -->
+  <circle cx="135" cy="85" r="8" fill="#10B981"/>
+  <circle cx="165" cy="85" r="8" fill="#10B981"/>
+  <circle cx="137" cy="83" r="3" fill="white"/>
+  <circle cx="167" cy="83" r="3" fill="white"/>
+
+  <!-- Smile -->
+  <path d="M135 100 Q150 112 165 100" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Antenna -->
+  <line x1="150" y1="50" x2="150" y2="35" stroke="#10B981" stroke-width="3"/>
+  <circle cx="150" cy="30" r="8" fill="#FCD34D"/>
+
+  <!-- Body/base -->
+  <rect x="120" y="140" width="60" height="25" rx="6" fill="white" stroke="#10B981" stroke-width="2"/>
+  <circle cx="135" cy="152" r="4" fill="#10B981"/>
+  <circle cx="150" cy="152" r="4" fill="#10B981"/>
+  <circle cx="165" cy="152" r="4" fill="#10B981"/>
+
+  <!-- Chat bubbles -->
+  <path d="M200 60 Q200 45 215 45 L255 45 Q270 45 270 60 L270 80 Q270 92 255 92 L220 92 L210 105 L213 92 Q200 92 200 80 Z" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="212" y="58" width="45" height="5" rx="2" fill="#E2E8F0"/>
+  <rect x="212" y="68" width="35" height="5" rx="2" fill="#E2E8F0"/>
+  <rect x="212" y="78" width="40" height="5" rx="2" fill="#E2E8F0"/>
+
+  <path d="M30 80 Q30 65 45 65 L85 65 Q100 65 100 80 L100 100 Q100 112 85 112 L65 112 L55 125 L58 112 Q30 112 30 100 Z" fill="#10B981" stroke="#059669" stroke-width="2"/>
+  <rect x="42" y="78" width="45" height="5" rx="2" fill="white" opacity="0.8"/>
+  <rect x="42" y="88" width="35" height="5" rx="2" fill="white" opacity="0.6"/>
+  <rect x="42" y="98" width="40" height="5" rx="2" fill="white" opacity="0.6"/>
+
+  <!-- Sparkles -->
+  <path d="M250 120 L252 126 L258 126 L253 130 L255 136 L250 132 L245 136 L247 130 L242 126 L248 126 Z" fill="#FCD34D"/>
+  <path d="M50 45 L51 49 L55 49 L52 52 L53 56 L50 53 L47 56 L48 52 L45 49 L49 49 Z" fill="#FCD34D"/>
+
+  <!-- Decorative dots -->
+  <circle cx="270" cy="170" r="6" fill="#A5F3FC" opacity="0.6"/>
+  <circle cx="30" cy="150" r="5" fill="#C4B5FD" opacity="0.6"/>
+  <circle cx="200" cy="30" r="4" fill="#FED7AA" opacity="0.6"/>
+</svg>

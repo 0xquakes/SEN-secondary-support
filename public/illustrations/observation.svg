@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <!-- Background -->
+  <circle cx="150" cy="100" r="85" fill="#DBEAFE" opacity="0.3"/>
+
+  <!-- Clipboard -->
+  <rect x="90" y="30" width="120" height="150" rx="6" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="130" y="20" width="40" height="20" rx="4" fill="#3B82F6"/>
+  <circle cx="150" cy="30" r="5" fill="white"/>
+
+  <!-- Clipboard content -->
+  <rect x="105" y="50" width="90" height="8" rx="2" fill="#3B82F6"/>
+
+  <!-- Observation items -->
+  <rect x="105" y="70" width="14" height="14" rx="2" fill="#10B981"/>
+  <path d="M108 77 L111 80 L116 74" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="125" y="73" width="65" height="6" rx="1" fill="#E2E8F0"/>
+
+  <rect x="105" y="92" width="14" height="14" rx="2" fill="#10B981"/>
+  <path d="M108 99 L111 102 L116 96" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="125" y="95" width="55" height="6" rx="1" fill="#E2E8F0"/>
+
+  <rect x="105" y="114" width="14" height="14" rx="2" fill="#10B981"/>
+  <path d="M108 121 L111 124 L116 118" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="125" y="117" width="60" height="6" rx="1" fill="#E2E8F0"/>
+
+  <rect x="105" y="136" width="14" height="14" rx="2" fill="#FCD34D"/>
+  <rect x="125" y="139" width="50" height="6" rx="1" fill="#E2E8F0"/>
+
+  <rect x="105" y="158" width="14" height="14" rx="2" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1"/>
+  <rect x="125" y="161" width="45" height="6" rx="1" fill="#E2E8F0"/>
+
+  <!-- Eye icon -->
+  <ellipse cx="240" cy="80" rx="30" ry="20" fill="white" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="240" cy="80" r="12" fill="#3B82F6"/>
+  <circle cx="240" cy="80" r="5" fill="#1E293B"/>
+  <circle cx="244" cy="76" r="3" fill="white"/>
+
+  <!-- Decorative elements -->
+  <circle cx="60" cy="60" r="8" fill="#C4B5FD" opacity="0.6"/>
+  <circle cx="250" cy="150" r="6" fill="#FCD34D" opacity="0.6"/>
+
+  <!-- Pencil -->
+  <rect x="220" y="120" width="50" height="10" rx="2" fill="#FCD34D" transform="rotate(30 245 125)"/>
+  <polygon points="213,138 220,128 223,135" fill="#F8CDBA"/>
+  <polygon points="214,140 220,130 217,137" fill="#1E293B"/>
+</svg>

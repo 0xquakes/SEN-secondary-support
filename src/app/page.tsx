@@ -10,47 +10,38 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-emerald-50 to-white py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Text content */}
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-emerald-600 font-semibold mb-3 text-sm uppercase tracking-wide">For KS3/KS4 Teachers and TAs</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">
-                Turn SEND paperwork into{' '}
-                <span className="text-emerald-600">classroom action</span>
-              </h1>
-              <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-xl">
-                The EHCP says &ldquo;benefits from visual supports&rdquo; — but what does that <em>actually</em> look like in your lesson? Get specific strategies, exact scripts, and worked examples you can use tomorrow.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                <Link
-                  href="/library"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors shadow-md text-lg"
-                >
-                  Browse All Strategies
-                </Link>
-                <Link
-                  href="/generator"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors border border-slate-300 shadow-sm text-lg"
-                >
-                  Generate for My Lesson
-                </Link>
-              </div>
-              <p className="text-slate-500 mt-5 text-sm">
-                5-minute prep. Evidence-based. Ready to use.
-              </p>
-            </div>
-
-            {/* Mascot */}
-            <div className="flex-shrink-0 order-first md:order-last">
-              <img
-                src="/mascot.png"
-                alt="Includable chameleon mascot"
-                className="w-40 h-40 md:w-56 md:h-56 drop-shadow-lg"
-              />
-            </div>
+      <section className="bg-gradient-to-b from-emerald-50 to-white py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <img
+            src="/mascot.png"
+            alt="Includable mascot"
+            className="w-24 h-24 mx-auto mb-6"
+          />
+          <p className="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wide">For KS3/KS4 Teachers and TAs</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            Turn SEND paperwork into<br />
+            <span className="text-emerald-600">classroom action</span>
+          </h1>
+          <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            The EHCP says &ldquo;benefits from visual supports&rdquo; — but what does that <em>actually</em> look like in your lesson? Get specific strategies, exact scripts, and worked examples you can use tomorrow.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/library"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors shadow-md text-lg"
+            >
+              Browse All Strategies
+            </Link>
+            <Link
+              href="/generator"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors border border-slate-300 shadow-sm text-lg"
+            >
+              Generate for My Lesson
+            </Link>
           </div>
+          <p className="text-slate-500 mt-6 text-sm">
+            5-minute prep. Evidence-based. Ready to use.
+          </p>
         </div>
       </section>
 

@@ -611,7 +611,7 @@ REMEMBER: You can always return to concrete when understanding breaks down.`,
     'difficulty with abstract reasoning',
     'requires multi-sensory teaching approaches',
     'learns best through practical activities',
-    'needs concepts broken down into concrete steps',
+    'needs concepts breaking down into concrete steps',
   ],
 
   relatedStrategies: ['chunking-one-step-instructions', 'visual-supports', 'task-analysis'],

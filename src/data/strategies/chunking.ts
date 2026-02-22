@@ -542,7 +542,7 @@ WHEN YOU SEE:
 
   ehcpPhrases: [
     'difficulties following multi-step instructions',
-    'needs instructions broken down',
+    'needs instructions breaking down',
     'struggles with complex instructions',
     'requires step-by-step guidance',
     'needs instructions repeated',

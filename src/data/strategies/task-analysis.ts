@@ -22,7 +22,7 @@ export const taskAnalysisStrategy: Strategy = {
         'Completes some steps but misses others randomly',
         'Asks "what do I do next?" repeatedly',
         'Stares at the page, unsure how to continue',
-        'EHCP mentions "difficulties with multi-step tasks" or "needs tasks broken down"',
+        'EHCP mentions "difficulties with multi-step tasks" or "needs tasks breaking down"',
       ],
     },
 
@@ -594,7 +594,7 @@ WHEN YOU SEE:
 
   ehcpPhrases: [
     'difficulties with multi-step tasks',
-    'needs tasks broken into small steps',
+    'needs tasks breaking into small steps',
     'struggles with sequencing',
     'requires visual supports for task completion',
     'needs step-by-step guidance',

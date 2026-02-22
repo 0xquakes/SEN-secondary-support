@@ -164,7 +164,7 @@ export default function HomePage() {
             {[
               { phrase: '"Difficulties following multi-step instructions"', strategy: 'chunking-one-step-instructions', action: 'Use Chunking' },
               { phrase: '"Gives up before completing work"', strategy: 'backward-chaining', action: 'Try Backward Chaining' },
-              { phrase: '"Needs tasks broken into small steps"', strategy: 'task-analysis', action: 'Apply Task Analysis' },
+              { phrase: '"Needs tasks breaking into small steps"', strategy: 'task-analysis', action: 'Apply Task Analysis' },
               { phrase: '"Over-reliant on adult support"', strategy: 'prompt-fading', action: 'Use Prompt Fading' },
               { phrase: '"Benefits from visual supports"', strategy: 'visual-supports-now-next', action: 'Create Visual Supports' },
               { phrase: '"Shuts down when faced with difficulty"', strategy: 'errorless-learning', action: 'Try Errorless Learning' },

@@ -25,7 +25,7 @@ export default function HomePage() {
               href="/library"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors shadow-md text-lg"
             >
-              Browse {strategies.length} Strategies
+              Browse All Strategies
             </Link>
             <Link
               href="/generator"
@@ -55,7 +55,7 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-emerald-700">Browse all strategies</h3>
-              <p className="text-sm text-slate-600">See all {strategies.length} strategies with search and filters</p>
+              <p className="text-sm text-slate-600">See all strategies with search and filters</p>
             </Link>
 
             <Link
@@ -191,7 +191,7 @@ export default function HomePage() {
               href="/library"
               className="text-emerald-600 hover:text-emerald-700 font-medium"
             >
-              View all {strategies.length} strategies →
+              View all strategies →
             </Link>
           </div>
         </div>

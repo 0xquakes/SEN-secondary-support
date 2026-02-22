@@ -88,7 +88,7 @@ export default function LibraryPage() {
           <div>
             <h1 className="text-3xl font-bold text-slate-900 mb-4">Strategy Library</h1>
             <p className="text-lg text-slate-600 max-w-2xl">
-              Browse all {strategies.length} evidence-based strategies for supporting pupils with SEND. Search by name, subject, or learning need.
+              Browse our evidence-based strategies for supporting pupils with SEND. Search by name, subject, or learning need.
             </p>
           </div>
           <img

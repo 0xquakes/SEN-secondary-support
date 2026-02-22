@@ -51,7 +51,7 @@ export default function DownloadsPage() {
         {/* Strategy List */}
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-4">
-            All {strategies.length} Strategies
+            All Strategies
           </h2>
 
           <div className="space-y-3">
@@ -113,7 +113,7 @@ export default function DownloadsPage() {
             Open All Print Pages
           </button>
           <p className="text-xs text-slate-500 mt-2">
-            Opens {strategies.length} tabs. Save each as PDF using your browser&apos;s print function.
+            Opens multiple tabs. Save each as PDF using your browser&apos;s print function.
           </p>
         </section>
 

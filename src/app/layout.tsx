@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SEND Teaching Strategies | From Documentation to Classroom Action",
+  title: "Includable | SEND Strategies for Secondary Teachers",
   description: "What to actually do when documentation says 'benefits from visual supports' or 'needs tasks breaking into steps'. Evidence-based strategies with exact scripts, worked examples, and 5-minute prep plans for KS3/KS4 teachers supporting pupils working significantly below age-related expectations.",
   keywords: ["SEND strategies", "SEND teaching", "KS3 SEND", "KS4 SEND", "differentiation strategies", "visual supports", "task analysis", "chunking instructions", "secondary SEND", "teaching assistants", "SENCO resources"],
 };

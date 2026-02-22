@@ -52,7 +52,7 @@ export function PrintableSummary({ strategy }: PrintableSummaryProps) {
           </div>
 
           <div className="mt-6 pt-4 border-t border-gray-400 text-xs text-gray-600">
-            <p>SEND Teaching Strategies | {strategy.title}</p>
+            <p>Includable | {strategy.title}</p>
           </div>
         </div>
       </div>

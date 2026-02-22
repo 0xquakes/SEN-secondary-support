@@ -26,9 +26,9 @@ export function Header() {
             <Link
               href="/"
               className="flex flex-col"
-              aria-label="SEND Strategies - Home"
+              aria-label="Includable - Home"
             >
-              <span className="text-xl font-bold text-emerald-600">SEND Strategies</span>
+              <span className="text-xl font-bold text-emerald-600">Includable</span>
               <span className="text-xs text-slate-500 hidden sm:block">For KS3/KS4 Teachers</span>
             </Link>
 

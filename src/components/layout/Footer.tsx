@@ -13,7 +13,7 @@ export function Footer() {
           {/* Branding */}
           <div className="text-center md:text-left">
             <p className="text-sm">
-              <span className="text-emerald-600 font-semibold">SEND Strategies</span>
+              <span className="text-emerald-600 font-semibold">Includable</span>
               {' '}&middot;{' '}
               What to actually do in the classroom
             </p>
@@ -45,7 +45,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-4 pt-4 border-t border-slate-200 text-center text-xs text-slate-500">
           <p>
-            &copy; {currentYear} SEND Teaching Strategies. For teaching staff only.
+            &copy; {currentYear} Includable. For teaching staff only.
             Adapt all guidance to your school&apos;s policies and individual pupil needs.
           </p>
         </div>

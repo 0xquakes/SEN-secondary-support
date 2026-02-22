@@ -101,7 +101,7 @@ function StrategySummary({ strategy }: { strategy: Strategy }) {
 
       {/* Footer */}
       <div className="mt-6 pt-4 border-t border-gray-300 text-xs text-gray-500 text-center">
-        SEND Teaching Strategies &middot; {strategy.title} &middot; For teaching staff only
+        Includable &middot; {strategy.title} &middot; For teaching staff only
       </div>
     </div>
   );
@@ -134,7 +134,7 @@ function ChecklistPage({ strategiesGroup }: { strategiesGroup: Strategy[] }) {
       </div>
 
       <div className="mt-6 pt-4 border-t border-gray-300 text-xs text-gray-500 text-center">
-        SEND Teaching Strategies &middot; Quick Checklists &middot; For teaching staff only
+        Includable &middot; Quick Checklists &middot; For teaching staff only
       </div>
     </div>
   );
@@ -304,7 +304,7 @@ function TAPromptCardsPage() {
       </div>
 
       <div className="mt-6 pt-4 border-t border-gray-300 text-xs text-gray-500 text-center">
-        SEND Teaching Strategies &middot; TA Prompt Cards &middot; For teaching staff only
+        Includable &middot; TA Prompt Cards &middot; For teaching staff only
       </div>
     </div>
   );
@@ -429,7 +429,7 @@ export default function ResourcesPage() {
         {/* Cover page */}
         <div className="page-break-after p-8 text-center">
           <div className="mt-16">
-            <h1 className="text-4xl font-bold mb-4">SEND Teaching Strategies</h1>
+            <h1 className="text-4xl font-bold mb-4">Includable</h1>
             <h2 className="text-2xl text-gray-600 mb-8">Resource Bundle for Teachers</h2>
 
             <div className="max-w-md mx-auto text-left mt-12 space-y-4">
@@ -466,7 +466,7 @@ export default function ResourcesPage() {
         {/* Back cover */}
         <div className="p-8 text-center">
           <div className="mt-32">
-            <h2 className="text-2xl font-bold mb-4">SEND Teaching Strategies</h2>
+            <h2 className="text-2xl font-bold mb-4">Includable</h2>
             <p className="text-gray-600 mb-8">Practical Classroom Support for KS3/KS4 Teachers</p>
 
             <div className="max-w-md mx-auto text-sm text-gray-500 space-y-4">

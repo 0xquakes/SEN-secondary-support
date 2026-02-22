@@ -16,13 +16,23 @@ export default function HomePage() {
             <div>
               <p className="text-emerald-600 font-medium mb-3">For KS3/KS4 Teachers and TAs</p>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                What to <span className="text-emerald-600">actually do</span> when documentation says...
+                Turn SEND paperwork into <span className="text-emerald-600">classroom action</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-4">
-                &ldquo;Benefits from visual supports&rdquo; &middot; &ldquo;Needs tasks broken into steps&rdquo; &middot; &ldquo;Requires processing time&rdquo;
+
+              {/* The Problem */}
+              <div className="bg-white border border-slate-200 rounded-lg p-4 mb-6">
+                <p className="text-slate-700 font-medium mb-2">Sound familiar?</p>
+                <p className="text-slate-600 text-sm">
+                  You&apos;ve read the EHCP. It says the pupil &ldquo;benefits from visual supports&rdquo; and &ldquo;needs tasks broken into steps.&rdquo; But what does that actually look like in your Year 9 Science lesson on Tuesday period 3?
+                </p>
+              </div>
+
+              {/* The Solution */}
+              <p className="text-lg text-slate-700 mb-4">
+                <strong>This site bridges that gap.</strong> We give you specific, ready-to-use strategies with exact scripts, step-by-step guides, and worked examples for your subject.
               </p>
-              <p className="text-lg text-slate-500 mb-8">
-                {strategies.length} evidence-based strategies with exact scripts, worked examples, and 5-minute prep plans for supporting pupils working significantly below age-related expectations.
+              <p className="text-slate-500 mb-8">
+                {strategies.length} evidence-based strategies. 5-minute prep. No more guessing what &ldquo;differentiation&rdquo; means in practice.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -33,16 +43,16 @@ export default function HomePage() {
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
-                  Browse All Strategies
+                  Browse Strategies
                 </Link>
                 <Link
-                  href="/downloads"
+                  href="/generator"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
-                  Download PDFs
+                  Generate for My Lesson
                 </Link>
               </div>
             </div>
